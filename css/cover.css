@@ -161,3 +161,7 @@ body {
     width: 700px;
   }
 }
+
+section {
+    background-attachment: fixed;
+}
