@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--***The above three tags must come first in the head; any other head content must come AFTER these tags-->
-		<title>Organization Title Goes Here</title>
+		<title>SLAA:&nbsp&nbsp&nbspUtah Intergroup</title>
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 		<!--<link href="css/jumbotron-narrow.css" rel="stylesheet">-->
@@ -143,7 +143,7 @@
                         </a>
                     </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                         A: Only you can answer that question. We have the 40 Questions for Self Diagnosis on the website,
                         and if you answer yes to any one of them, this program could be helpful for you.
@@ -153,7 +153,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingTwo">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Is this program anonymous?
                         </a>
                     </h4>
@@ -172,7 +172,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingThree">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Where are meetings held?
                         </a>
                     </h4>
@@ -186,7 +186,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingFour">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             What are meetings like?
                         </a>
                     </h4>
@@ -204,7 +204,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingFive">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             Can I still come if I don't believe in God?
                         </a>
                     </h4>
@@ -220,7 +220,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingSix">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             Who is allowed to attend meetings?  What kind of people can I expect to see there?
                         </a>
                     </h4>
@@ -239,7 +239,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingSeven">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             How much does it cost to attend meetings?
                         </a>
                     </h4>
@@ -254,7 +254,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingEight">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                             Do I have to speak at a meeting?
                         </a>
                     </h4>
@@ -268,7 +268,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingNine">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                             How long do I have to attend meetings?
                         </a>
                     </h4>
@@ -291,10 +291,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/collapse.js"></script>
     <script src="stellar/jquery.stellar.min.js"></script>
     <script src="stellar/jquery-2.0.2.js"></script>
     <script>
         $.stellar();
+    </script>
+    <script>
+        $('.collapse').collapse()
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
