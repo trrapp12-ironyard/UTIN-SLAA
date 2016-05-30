@@ -173,6 +173,8 @@ body {
   }
 }
 
-.section {
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
