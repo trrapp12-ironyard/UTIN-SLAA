@@ -178,3 +178,16 @@ section {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.panel-default>.panel-heading {
+  color: rgba(255,255,255,.25);
+  background-color: rgba(255,255,255,.25);
+  border-color: #ddd;
+}
