@@ -1,7 +1,7 @@
 # wk-01-alpha (Pure Energy)
 ---
 
-![Pure Energy screen-shot](https://cloud.githubusercontent.com/assets/11747875/20289817/255608aa-aa99-11e6-89d9-95c611e97016.png)
+![SLAA](http://trrapp12.github.io/examplepage/)
 <br/>
 <br/>
 ![Pure Energy screen-shot2](https://cloud.githubusercontent.com/assets/11747875/20289828/41ff0984-aa99-11e6-8f00-1d05e7de04cf.png)
