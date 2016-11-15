@@ -33,7 +33,7 @@ My client for this project was a local SLAA chapter in Utah. They approached me 
 ###Project published at: 
 ---
 
-[wk-01-alpha](https://trrapp12-ironyard.github.io/wk-01-alpha/)
+[SLAA](http://trrapp12.github.io/examplepage/)
 <br/>
 <br/>
 ###More Information:
