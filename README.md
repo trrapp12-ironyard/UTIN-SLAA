@@ -1,20 +1,33 @@
 # wk-01-alpha (Pure Energy)
 ---
 
-![SLAA](http://trrapp12.github.io/examplepage/)
+![SLAA](https://cloud.githubusercontent.com/assets/11747875/20292576/e16f573c-aaab-11e6-85b7-3b8736689ce4.png)
 <br/>
 <br/>
-![Pure Energy screen-shot2](https://cloud.githubusercontent.com/assets/11747875/20289828/41ff0984-aa99-11e6-8f00-1d05e7de04cf.png)
+![SLAA2](https://cloud.githubusercontent.com/assets/11747875/20292581/f6265cd4-aaab-11e6-8765-f16064102d2c.png)
 <br/>
 <br/>
-![Pure Energy screen-shot2](https://cloud.githubusercontent.com/assets/11747875/20289843/5fb8e5da-aa99-11e6-9df1-59494825098d.png)
+![SLAA3](https://cloud.githubusercontent.com/assets/11747875/20292586/00305ce8-aaac-11e6-9cf1-ecc37990735d.png)
+<br/>
+<br/>
+![SLAA3](https://cloud.githubusercontent.com/assets/11747875/20292601/28b2bcba-aaac-11e6-8d83-3acdb2f71633.png)
 <br/>
 <br/>
 
-###This project demonstrates the following:
+###Brief Description: 
+---
+My client for this project was a local SLAA chapter in Utah. They approached me because they were short of money and I was short of experience.  It was a project that was challenged my design and coding skills and I was glad to help.
+<br/>
+<br/>
+
+###Project Demonstrates: 
 ---
 
-- [x] Include imported css.
+- [x] Use of CSS3 and HTML5.
+- [x] Use of position and z-index to get layered navigation bar look.
+- [x] Use of CSS3 and HTML
+- [x] Use of CSS3 and HTML
+- [x] Use of CSS3 and HTML
 
 #####Apply styles based on the following selectors and selector combinations:
 ---
