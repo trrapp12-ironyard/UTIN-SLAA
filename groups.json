@@ -1,0 +1,7 @@
+
+
+{"groups":[
+  {"name": "group1", "bio": "something", "logo": "absolute/path", "meetings": [{"title": "fun", "time":"9 A.M.","day":"Saturday", "address": "25 North 200 West", "location": "meeting room", "pointOfContact": "Brian", "phoneNumber": "(801)-856-6669", "mapLink": "url"}]},
+  {"name": "group2", "bio": "something different", "logo": "absolute/path","meetings": [{"title": "fun", "time":"9 A.M.","day":"Saturday", "address": "25 North 200 West", "location": "meeting room", "pointOfContact": "Brian", "phoneNumber": "(801)-856-6669", "mapLink": "url"}]}
+  ]
+};
