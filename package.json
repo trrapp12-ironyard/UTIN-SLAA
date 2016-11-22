@@ -1,0 +1,52 @@
+{
+  "name": "utin-slaa",
+  "version": "1.0.0",
+  "description": "a web page for local 12-step groups in the SLC, UT area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trrapp12/UTIN-SLAA.git"
+  },
+  "keywords": [
+    "SLAA",
+    "AA",
+    "NA",
+    "Adult",
+    "Children",
+    "of",
+    "Alcoholics",
+    "Co-Dependants",
+    "Anonymous",
+    "Debtors",
+    "Anonymous",
+    "Eating",
+    "Disorders",
+    "Anonymous",
+    "Emotions",
+    "Anonymous",
+    "Families",
+    "Anonymous",
+    "S-Anon",
+    "SAA",
+    "Underearners",
+    "Anonymous",
+    "Workaholics",
+    "Anonymous"
+  ],
+  "author": "Trevor Rapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trrapp12/UTIN-SLAA/issues"
+  },
+  "homepage": "https://github.com/trrapp12/UTIN-SLAA#readme",
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}
