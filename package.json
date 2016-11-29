@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpack:dev": "webpack -d",
-    "copy": "cp src/index.html dist/index.html && cp -R src/app/images dist/app",
+    "copy": "cp src/index.html dist/index.html && cp -R src/app/img dist/app",
     "dev": "npm run webpack:dev && npm run copy && webpack-dev-server --content-base src/ --inline --hot",
     "dev:start": "npm run webpack:dev && npm run copy && npm start",
     "prod:start": "npm run postinstall && npm start",
@@ -48,8 +48,7 @@
     "url": "https://github.com/trrapp12/UTIN-SLAA/issues"
   },
   "homepage": "https://github.com/trrapp12/UTIN-SLAA#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
@@ -67,6 +66,6 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-  },
+  }
 
 }

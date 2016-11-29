@@ -14,7 +14,7 @@ class App extends React.Component {
           </div>
           <div className="rightColumn">
           </div>
-          <div className="bioInformation">
+          <div className="bioInformation"></div>
         </div>
     )
   }
