@@ -8,9 +8,9 @@ var SRC_DIR = path.resolve(__dirname, "src");
 var config = {
   entry: SRC_DIR + "/app/index.js",
   output: {
-    path: DIST_DIR + "/app",
+    path: DIST_DIR + "/public",
     filename: "bundle.js",
-    publicPath: "/app/"
+    publicPath: "/public/"
   },
   module: {
     loaders: [

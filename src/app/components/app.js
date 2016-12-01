@@ -1,5 +1,3 @@
-"use strict"
-
 import React from 'react';
 import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
 import meetingComponent from './meetingComponent';
