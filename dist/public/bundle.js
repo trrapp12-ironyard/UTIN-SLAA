@@ -21524,7 +21524,7 @@
 	          _react2.default.createElement(
 	            'h1',
 	            null,
-	            'RAndom things'
+	            'Random things'
 	          )
 	        ),
 	        _react2.default.createElement('div', { className: 'rightColumn' }),
@@ -21537,6 +21537,8 @@
 	}(_react2.default.Component);
 
 	exports.default = App;
+
+	// steps to study. 1)read the JSON object from the file 2)turn into an object 3) how to get it from the object into component 3.props 4)may need to look up .bind 5)display is the {}
 
 /***/ },
 /* 179 */
