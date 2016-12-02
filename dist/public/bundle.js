@@ -21524,7 +21524,7 @@
 	          _react2.default.createElement(
 	            'h1',
 	            null,
-	            'hello world'
+	            'RAndom things'
 	          )
 	        ),
 	        _react2.default.createElement('div', { className: 'rightColumn' }),
