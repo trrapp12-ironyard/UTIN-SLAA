@@ -21487,13 +21487,17 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _meetingComponent = __webpack_require__(217);
+	var _MeetingComponent = __webpack_require__(217);
 
-	var _meetingComponent2 = _interopRequireDefault(_meetingComponent);
+	var _MeetingComponent2 = _interopRequireDefault(_MeetingComponent);
 
-	var _bioComponent = __webpack_require__(218);
+	var _BioComponent = __webpack_require__(218);
 
-	var _bioComponent2 = _interopRequireDefault(_bioComponent);
+	var _BioComponent2 = _interopRequireDefault(_BioComponent);
+
+	var _LogoComponent = __webpack_require__(219);
+
+	var _LogoComponent2 = _interopRequireDefault(_LogoComponent);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21503,13 +21507,20 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var jsonObject = __webpack_require__(220);
+
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+	    _this.myProp = jsonObject;
+	    _this.currentGroup = 0;
+
+	    return _this;
 	  }
 
 	  _createClass(App, [{
@@ -21521,14 +21532,18 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'leftColumn' },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Random things'
-	          )
+	          _react2.default.createElement(_LogoComponent2.default, null)
 	        ),
-	        _react2.default.createElement('div', { className: 'rightColumn' }),
-	        _react2.default.createElement('div', { className: 'bioInformation' })
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(_MeetingComponent2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(_BioComponent2.default, { string: this.myProp.groups[0].name })
+	        )
 	      );
 	    }
 	  }]);
@@ -21537,8 +21552,6 @@
 	}(_react2.default.Component);
 
 	exports.default = App;
-
-	// steps to study. 1)read the JSON object from the file 2)turn into an object 3) how to get it from the object into component 3.props 4)may need to look up .bind 5)display is the {}
 
 /***/ },
 /* 179 */
@@ -25454,16 +25467,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var meetingComponent = function (_React$Component) {
-	  _inherits(meetingComponent, _React$Component);
+	var MeetingComponent = function (_React$Component) {
+	  _inherits(MeetingComponent, _React$Component);
 
-	  function meetingComponent() {
-	    _classCallCheck(this, meetingComponent);
+	  function MeetingComponent() {
+	    _classCallCheck(this, MeetingComponent);
 
-	    return _possibleConstructorReturn(this, (meetingComponent.__proto__ || Object.getPrototypeOf(meetingComponent)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (MeetingComponent.__proto__ || Object.getPrototypeOf(MeetingComponent)).apply(this, arguments));
 	  }
 
-	  _createClass(meetingComponent, [{
+	  _createClass(MeetingComponent, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -25472,16 +25485,16 @@
 	        _react2.default.createElement(
 	          "h1",
 	          null,
-	          "Hello World"
+	          "Meeting"
 	        )
 	      );
 	    }
 	  }]);
 
-	  return meetingComponent;
+	  return MeetingComponent;
 	}(_react2.default.Component);
 
-	exports.default = meetingComponent;
+	exports.default = MeetingComponent;
 
 /***/ },
 /* 218 */
@@ -25507,16 +25520,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var bioComponent = function (_React$Component) {
-	  _inherits(bioComponent, _React$Component);
+	var BioComponent = function (_React$Component) {
+	  _inherits(BioComponent, _React$Component);
 
-	  function bioComponent() {
-	    _classCallCheck(this, bioComponent);
+	  function BioComponent() {
+	    _classCallCheck(this, BioComponent);
 
-	    return _possibleConstructorReturn(this, (bioComponent.__proto__ || Object.getPrototypeOf(bioComponent)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (BioComponent.__proto__ || Object.getPrototypeOf(BioComponent)).apply(this, arguments));
 	  }
 
-	  _createClass(bioComponent, [{
+	  _createClass(BioComponent, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -25525,16 +25538,135 @@
 	        _react2.default.createElement(
 	          "h1",
 	          null,
-	          "hello world"
+	          "Bio info ",
+	          this.props.string
 	        )
 	      );
 	    }
 	  }]);
 
-	  return bioComponent;
+	  return BioComponent;
 	}(_react2.default.Component);
 
-	exports.default = bioComponent;
+	exports.default = BioComponent;
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var LogoComponent = function (_React$Component) {
+	  _inherits(LogoComponent, _React$Component);
+
+	  function LogoComponent() {
+	    _classCallCheck(this, LogoComponent);
+
+	    return _possibleConstructorReturn(this, (LogoComponent.__proto__ || Object.getPrototypeOf(LogoComponent)).apply(this, arguments));
+	  }
+
+	  _createClass(LogoComponent, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Logo "
+	        )
+	      );
+	    }
+	  }]);
+
+	  return LogoComponent;
+	}(_react2.default.Component);
+
+	exports.default = LogoComponent;
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+		"groups": [{
+			"name": "Adult Children of Alcoholics",
+			"bio": "Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today.",
+			"logo": "./app/img/dummyphoto.png",
+			"meetings": [{
+				"title": "The Light Catchers",
+				"time": "9 A.M.",
+				"day": "Saturday",
+				"address": "25 North 200 West",
+				"location": "meeting room",
+				"pointOfContact": "Brian",
+				"phoneNumber": "(801)-856-6669",
+				"mapLink": "url"
+			}, {
+				"title": "Step Study",
+				"time": "9 A.M.",
+				"day": "Saturday",
+				"address": "1100 East 5550 South",
+				"location": "East Building",
+				"pointOfContact": "Jon T",
+				"phoneNumber": "(801)-682-0581",
+				"mapLink": "url"
+			}]
+		}, {
+			"name": "Co-Dependents Anonymous",
+			"bio": "Co-Dependents Anonymous is a fellowship of men and women whose common purpose is to develop healthy relationships. The only requirement for membership is a desire for healthy and loving relationships. We gather together to support and share with each other in a journey of self-discovery -- learning to love the self. Living the program allows each of us to become increasingly honest with ourselves about our personal histories and our own codependent behaviors.",
+			"logo": "./app/img/dummyphoto.png",
+			"meetings": [{
+				"title": "Men's CoDA Meeting",
+				"time": "6:30 - 7:30 P.M.",
+				"day": "Monday",
+				"address": "248 E 3900 S",
+				"location": "N/A",
+				"pointOfContact": "Mike D",
+				"phoneNumber": "(801)-240-6243",
+				"mapLink": "url"
+			}, {
+				"title": "CoDA-Speaking/Sharing",
+				"time": "7:00 - 8:00 P.M.",
+				"day": "Tuesday",
+				"address": "3900 S 2500 E",
+				"location": "Our Savior's Lutheran Church",
+				"pointOfContact": "N/A",
+				"phoneNumber": "N/A",
+				"mapLink": "url"
+			}, {
+				"title": "Wednesday CoDA",
+				"time": "6:30 - 7:30 P.M.",
+				"day": "Wednesday",
+				"address": "248 E 3900 S",
+				"location": "Genesis Books",
+				"pointOfContact": "Mike D / Toby P",
+				"phoneNumber": "(831)-240-6243 / (801)-915-5938",
+				"mapLink": "url"
+			}]
+		}]
+	};
 
 /***/ }
 /******/ ]);

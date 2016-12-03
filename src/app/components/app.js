@@ -1,18 +1,32 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
-import meetingComponent from './meetingComponent';
-import bioComponent from './bioComponent';
+import MeetingComponent from './MeetingComponent';
+import BioComponent from './BioComponent';
+import LogoComponent from './LogoComponent';
+let jsonObject = require('../../groups.json')
 
 class App extends React.Component {
+
+  constructor() {
+    super();
+
+    this.myProp = jsonObject;
+    this.currentGroup = 0
+
+  }
+
   render() {
     return (
         <div className="row1">
           <div className="leftColumn">
-            <h1>Random things</h1>
+            <LogoComponent/>
           </div>
-          <div className="rightColumn">
+          <div>
+            <MeetingComponent/>
           </div>
-          <div className="bioInformation"></div>
+          <div>
+            <BioComponent string={this.myProp.groups[0].name}/>
+          </div>
         </div>
     )
   }
@@ -20,5 +34,3 @@ class App extends React.Component {
 
 
 export default App;
-
-// steps to study. 1)read the JSON object from the file 2)turn into an object 3) how to get it from the object into component 3.props 4)may need to look up .bind 5)display is the {}

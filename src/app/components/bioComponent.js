@@ -1,13 +1,14 @@
 import React from 'react';
 
-class bioComponent extends React.Component {
+class BioComponent extends React.Component {
+  
   render() {
     return (
       <div className="groupParentInformation">
-        <h1>hello world</h1>
+        <h1>Bio info {this.props.string}</h1>
       </div>
     )
   }
 }
 
-export default bioComponent;
+export default BioComponent;
