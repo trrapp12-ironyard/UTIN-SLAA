@@ -117,7 +117,7 @@
           "pointOfContact": "Not Listed",
           "phoneNumber": "EDA.UtahValley@gmail.com",
           "mapLink": "url"
-        },
+        }
       ]
     },
     {
@@ -176,8 +176,8 @@
       "logo": "./app/img/recovering_couples_anonymous.jpeg",
       "meetings": [
         {
-          "title": "The Light Catchers",
-          "time": "9 A.M.",
+          "title": "Last Saturday of the Month",
+          "time": "7 A.M.",
           "day": "Saturday",
           "address": "30 South Main St, Farmington, UT",
           "location": "N/A",
@@ -197,84 +197,132 @@
       "logo": "./app/img/S_anon.jpg",
       "meetings": [
         {
-          "title": "The Light Catchers",
-          "time": "9 A.M.",
-          "day": "Saturday",
-          "address": "25 North 200 West",
-          "location": "meeting room",
-          "pointOfContact": "Brian",
-          "phoneNumber": "(801)-856-6669",
+          "title": "S-Anon",
+          "time": "6 - 7 P.M.",
+          "day": "Wednesday",
+          "address": "1134 N 500 W Provo, UT",
+          "location": "NorthWest plaza building, Rm 1",
+          "pointOfContact": "Suzie",
+          "phoneNumber": "(801)-885-5741",
           "mapLink": "url"
         },
         {
-          "title": "Step Study",
-          "time": "9 A.M.",
-          "day": "Saturday",
-          "address": "1100 East 5550 South",
-          "location": "East Building",
-          "pointOfContact": "Jon T",
-          "phoneNumber": "(801)-682-0581",
+          "title": "S-Anon (newcomer)",
+          "time": "6:30 - 8 P.M.",
+          "day": "Wednesday",
+          "address": "55 W Main st. Lehi, UT",
+          "location": "Timpanogas Baptist Church",
+          "pointOfContact": "Laurel A",
+          "phoneNumber": "(801)-865-8593",
           "mapLink": "url"
         }
       ]
     },
     {
       "name": "SAA",
-      "bio": ["Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today."],
-      "logo": "./app/img/aca.jpeg",
+      "bio": ["As a fellowship of recovering addicts, Sex Addicts Anonymous offers a message of hope to anyone who suffers from sex addiction.",
+
+      "Through long and painful experience, we came to realize that we were powerless over our sexual thoughts and behaviors and that our preoccupation with sex was causing progressively severe adverse consequences for us, our families, and our friends. Despite many failed promises to ourselves and attempts to change, we discovered that we were unable to stop acting out sexually by ourselves.",
+
+      "Many of us came to this realization when we started attending SAA meetings. In that setting we heard stories similar to ours and realized that recovery from our problem was possible. We learned through the SAA Fellowship that we were not hopelessly defective.",
+
+      "The basic principles of recovery practiced by SAA are found in the Twelve Steps and Twelve Traditions of Alcoholics Anonymous. Although we are not affiliated with AA or with any other organization or agency, we are, indeed, grateful for permission to modify and apply the Steps and Traditions to sex addiction, making recovery possible for us."],
+      "logo": "./app/img/saa.jpg",
       "meetings": [
         {
-          "title": "The Light Catchers",
-          "time": "9 A.M.",
+          "title": "Saturday SAA Men's",
+          "time": "11:30 A.M.",
           "day": "Saturday",
-          "address": "25 North 200 West",
-          "location": "meeting room",
-          "pointOfContact": "Brian",
-          "phoneNumber": "(801)-856-6669",
+          "address": "Friendship Manor, 1320 E 500 S",
+          "location": "conference room",
+          "pointOfContact": "Jerry or Daniel",
+          "phoneNumber": "(801)-856-6669 or (801)-651-5305",
           "mapLink": "url"
         },
         {
-          "title": "Step Study",
-          "time": "9 A.M.",
+          "title": "Tuesday SAA Davis County",
+          "time": "7:30 P.M.",
           "day": "Saturday",
-          "address": "1100 East 5550 South",
-          "location": "East Building",
-          "pointOfContact": "Jon T",
-          "phoneNumber": "(801)-682-0581",
+          "address": "796 S Mountain Rd",
+          "location": "Westminster Presbyterian Church - classroom",
+          "pointOfContact": "Doug J or Robert D",
+          "phoneNumber": "(801)-776-6920 or (801)-668-7222",
+          "mapLink": "url"
+        },
+        {
+          "title": "Steps to Recovery",
+          "time": "6 P.M.",
+          "day": "Wednesday",
+          "address": "12 C Street",
+          "location": "First Presbyterian Church, Classroom #2",
+          "pointOfContact": "Alex or David",
+          "phoneNumber": "(801)-449-1851",
           "mapLink": "url"
         }
       ]
     },
     {
       "name": "SLAA",
-      "bio": ["Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today."],
-      "logo": "./app/img/aca.jpeg",
+      "bio": ["Sex and Love Addicts Anonymous is a Twelve Step - Twelve Tradition oriented fellowship based on the model pioneered by Alcoholics Anonymous.",
+
+      "One of the resources we draw on is our willingness to stop acting out in our own personal bottom line addictive behavior on a daily basis. In addition, members reach out to others in the fellowship, practice the Twelve Steps and Twelve Traditions of S.L.A.A. and seek a relationship with a higher power to counter the destructive consequences of one or more addictive behaviors related to sex addiction, love addiction, dependency on romantic attachments, emotional dependency, and sexual, social and emotional anorexia.",
+
+      "We find a common denominator in our obsessive, compulsive patterns which renders any personal differences of sexual or gender orientation irrelevant. "],
+      "logo": "./app/img/slaa.png",
       "meetings": [
         {
-          "title": "The Light Catchers",
-          "time": "9 A.M.",
+          "title": "Saturday Morning SLAA",
+          "time": "10 A.M.",
           "day": "Saturday",
-          "address": "25 North 200 West",
-          "location": "meeting room",
-          "pointOfContact": "Brian",
-          "phoneNumber": "(801)-856-6669",
+          "address": "248 E 3900 S",
+          "location": "Genesis Books",
+          "pointOfContact": "Jame",
+          "phoneNumber": "(801)-747-9015",
           "mapLink": "url"
         },
         {
-          "title": "Step Study",
-          "time": "9 A.M.",
-          "day": "Saturday",
-          "address": "1100 East 5550 South",
-          "location": "East Building",
-          "pointOfContact": "Jon T",
-          "phoneNumber": "(801)-682-0581",
+          "title": "Sunday Solution Seekers",
+          "time": "7 P.M.",
+          "day": "Sunday",
+          "address": "8074 S 1300 E",
+          "location": "N/A",
+          "pointOfContact": "James",
+          "phoneNumber": "(801)-747-9015",
+          "mapLink": "url"
+        },
+        {
+          "title": "Keys of the Kingdom",
+          "time": "7 P.M.",
+          "day": "Monday",
+          "address": "8th Ave and C street",
+          "location": "LDS Hospital, Education Building, Amicus Board Room",
+          "pointOfContact": "Bill",
+          "phoneNumber": "(801)-520-0345",
+          "mapLink": "url"
+        },
+        {
+          "title": "Women's SLAA Book Study",
+          "time": "7 P.M.",
+          "day": "Tuesday",
+          "address": "8074 S 1300 E",
+          "location": "Healthsouth Rehab Hospital",
+          "pointOfContact": "Claire or Brookie",
+          "phoneNumber": "(801)-251-6140 or (801) 821-8507",
           "mapLink": "url"
         }
       ]
     },
     {
       "name": "Underearners Anonymous",
-      "bio": ["Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today."],
+      "bio": ["Underearners Anonymous is a fellowship of men and women who share their experience, strength and hope with each other, that they may solve their common problem and help others to recover from compulsive underearning.",
+
+      "The only requirement for membership is the desire to stop underearning. There are no dues or fees; we are self-supporting through our own contributions.",
+
+      "UA is not allied with any sect, denomination, politics, organization, or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes.",
+
+      "Our primary purpose is to stop compulsive underearning, one day at a time, and to help other underearners do the same."
+
+],
       "logo": "./app/img/aca.jpeg",
       "meetings": [
         {
@@ -311,7 +359,7 @@
           "address": "25 North 200 West",
           "location": "meeting room",
           "pointOfContact": "Brian",
-          "phoneNumber": "(801)-856-6669",`
+          "phoneNumber": "(801)-856-6669",
           "mapLink": "url"
         },
         {
