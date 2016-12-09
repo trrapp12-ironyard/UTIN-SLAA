@@ -21509,7 +21509,9 @@
 	    _this.state = {
 	      currentGroup: 0,
 	      bio: _this.myProp.groups[0].bio,
-	      logo: _this.myProp.groups[0].logo
+	      logo: _this.myProp.groups[0].logo,
+	      meetingTitle: _this.myProp.groups[0].meetings[0].title
+
 	    };
 
 	    _this.updateState = _this.updateState.bind(_this);
@@ -21524,10 +21526,22 @@
 	      var newGroupNumber = (this.state.currentGroup + 1) % this.myProp.groups.length;
 	      var newBio = this.myProp.groups[newGroupNumber].bio;
 	      var newLogo = this.myProp.groups[newGroupNumber].logo;
+	      var newMeetingTitle = this.myProp.groups[newGroupNumber].meetings[0].title;
+	      console.log(this.myProp.groups[0].meetings[0].title);
+	      console.log(newMeetingTitle);
+	      // let newMeetingTime: this.myProp.groups[newGroupNumber].meetings[0].time;
+	      // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
+	      // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
+	      // let newMeetingLocation: this.myProp.groups[newGroupNumber].meetings[0].location;
+	      // let newMeetingPointOfContact: this.myProp.groups[newGroupNumber].meetings[0].pointOfContact;
+	      // let newMeetingPhoneNumber: this.myProp.groups[newGroupNumber].meetings[0].phoneNumber;
+	      // let newMeetingMap: this.myProp.groups[newGroupNumber].meetings[0].mapLink;
+
 	      this.setState({
 	        currentGroup: newGroupNumber,
 	        bio: newBio,
-	        logo: newLogo
+	        logo: newLogo,
+	        meetingTitle: newMeetingTitle
 	      });
 	    }
 	  }, {
@@ -21537,6 +21551,8 @@
 	      var logo = this.state.logo;
 	      var paragraphs = [];
 	      var bio = this.state.bio;
+	      var meetingTitle = this.state.title;
+	      console.log("I want this to be my state.title", this.state.meetingTitle);
 	      for (var i = 0; i < bio.length; i++) {
 	        paragraphs.push(_react2.default.createElement(
 	          'p',
@@ -21558,7 +21574,11 @@
 	          null,
 	          paragraphs
 	        ),
-	        _react2.default.createElement('div', null),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          meetingTitle
+	        ),
 	        _react2.default.createElement(
 	          'button',
 	          { onClick: this.updateState },
@@ -25712,47 +25732,29 @@
 		}, {
 			"name": "Underearners Anonymous",
 			"bio": ["Underearners Anonymous is a fellowship of men and women who share their experience, strength and hope with each other, that they may solve their common problem and help others to recover from compulsive underearning.", "The only requirement for membership is the desire to stop underearning. There are no dues or fees; we are self-supporting through our own contributions.", "UA is not allied with any sect, denomination, politics, organization, or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes.", "Our primary purpose is to stop compulsive underearning, one day at a time, and to help other underearners do the same."],
-			"logo": "./app/img/aca.jpeg",
+			"logo": "./app/img/underearners_anon.gif",
 			"meetings": [{
-				"title": "The Light Catchers",
-				"time": "9 A.M.",
-				"day": "Saturday",
-				"address": "25 North 200 West",
-				"location": "meeting room",
-				"pointOfContact": "Brian",
-				"phoneNumber": "(801)-856-6669",
-				"mapLink": "url"
-			}, {
-				"title": "Step Study",
-				"time": "9 A.M.",
-				"day": "Saturday",
-				"address": "1100 East 5550 South",
-				"location": "East Building",
-				"pointOfContact": "Jon T",
-				"phoneNumber": "(801)-682-0581",
+				"title": "It's Good to Be Me",
+				"time": "6:30 P.M.",
+				"day": "Thursday",
+				"address": "12 C Street",
+				"location": "First Presbyterian Church",
+				"pointOfContact": "Camille M",
+				"phoneNumber": "(801)-888-5828",
 				"mapLink": "url"
 			}]
 		}, {
 			"name": "Workaholics Anonymous",
-			"bio": ["Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today."],
-			"logo": "./app/img/aca.jpeg",
+			"bio": ["Workaholics Anonymous is a fellowship of individuals who share their experience, strength, and hope with each other that they may solve their common problems and help others to recover from workaholism.", "The only requirement for membership is the desire to stop working compulsively. There are no dues or fees for WA membership; we are self-supporting through our own contributions. WA is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses not opposes any causes. Our primary purpose is to stop working compulsively and to carry the message of recovery to workaholics who still suffer."],
+			"logo": "./app/img/workaholics_anonymous.jpg",
 			"meetings": [{
-				"title": "The Light Catchers",
-				"time": "9 A.M.",
-				"day": "Saturday",
-				"address": "25 North 200 West",
-				"location": "meeting room",
-				"pointOfContact": "Brian",
-				"phoneNumber": "(801)-856-6669",
-				"mapLink": "url"
-			}, {
-				"title": "Step Study",
-				"time": "9 A.M.",
-				"day": "Saturday",
-				"address": "1100 East 5550 South",
-				"location": "East Building",
-				"pointOfContact": "Jon T",
-				"phoneNumber": "(801)-682-0581",
+				"title": "Red Rock",
+				"time": "7:15 P.M.",
+				"day": "Tuesday",
+				"address": "12 C Street",
+				"location": "First Presbyterian Church",
+				"pointOfContact": "Jill F",
+				"phoneNumber": "(801)-803-0996",
 				"mapLink": "url"
 			}]
 		}]
