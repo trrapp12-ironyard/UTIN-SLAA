@@ -49,6 +49,7 @@ body {
   vertical-align: top;
 }
 .cover-container {
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -122,22 +123,15 @@ body {
 
 .cover {
   padding: 0 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
 
 /*
  * Affix and center
@@ -191,3 +185,5 @@ section {
   background-color: rgba(255,255,255,.25);
   border-color: #ddd;
 }
+
+/*handle the line spacing in paragraphs*/

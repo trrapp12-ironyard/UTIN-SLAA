@@ -1,0 +1,51 @@
+.blockquote_spacing {
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+}
+
+.topmarginspacing {
+  margin-top: 1.25em;
+}
+
+.pspacing{
+  line-height: 1.75em;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+#photo-60778 {
+
+  background-image: image("./img/pexels-photo-60778.jpeg");
+
+}
+
+#pre-photo-60788 {
+  background-attachment: fixed;
+}
+
+.photo {
+  max-width: 200px;
+  height: auto;
+}
+
+.bio-paragraph {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: left;
+  float: right;
+  display: inline-block;
+}
+
+.bio-image{
+  margin-top: 2em;
+  margin-right: 2em;
+  clear: right;
+}
+
+.img {
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}

@@ -21551,33 +21551,33 @@
 	      var logo = this.state.logo;
 	      var paragraphs = [];
 	      var bio = this.state.bio;
-	      var meetingTitle = this.state.title;
+	      var meetingTitle = this.state.meetingTitle;
 	      console.log("I want this to be my state.title", this.state.meetingTitle);
 	      for (var i = 0; i < bio.length; i++) {
 	        paragraphs.push(_react2.default.createElement(
 	          'p',
-	          { key: i },
+	          { className: 'bio-paragraph', key: i },
 	          bio[i]
 	        ));
 	      }
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: '' },
+	        { className: 'bio-paragraph' },
 	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement('img', { src: logo })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          paragraphs
-	        ),
-	        _react2.default.createElement(
-	          'h1',
+	          'h2',
 	          null,
 	          meetingTitle
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement('img', { className: 'photo', src: logo })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'bio-paragraph' },
+	          paragraphs
 	        ),
 	        _react2.default.createElement(
 	          'button',
@@ -25516,7 +25516,7 @@
 		}, {
 			"name": "Co-Dependents Anonymous",
 			"bio": ["Co-Dependents Anonymous is a fellowship of men and women whose common purpose is to develop healthy relationships. The only requirement for membership is a desire for healthy and loving relationships. We gather together to support and share with each other in a journey of self-discovery -- learning to love the self. Living the program allows each of us to become increasingly honest with ourselves about our personal histories and our own codependent behaviors.", "We rely upon the Twelve Steps and Twelve Traditions for knowledge and wisdom. These are the principles of our program and guides to developing honest and fulfilling relationships with ourselves and others. In CoDA, we each learn to build a bridge to a Higher Power of our own understanding, and we allow others the same privilege.", "This renewal process is a gift of healing for us. By actively working the program of Co-Dependents Anonymous, we can each realize a new joy, acceptance and serenity in our lives."],
-			"logo": "./app/img/dummyphoto.png",
+			"logo": "./app/img/codependants.png",
 			"meetings": [{
 				"title": "Men's CoDA Meeting",
 				"time": "6:30 - 7:30 P.M.",

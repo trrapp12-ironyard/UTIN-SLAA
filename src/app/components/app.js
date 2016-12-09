@@ -14,6 +14,7 @@ class App extends React.Component {
       logo: this.myProp.groups[0].logo,
       meetingTitle: this.myProp.groups[0].meetings[0].title,
 
+
       // meetingTime: this.myProp.groups[0].meetings[0].time,
       // meetingDay: this.myProp.groups[0].meetings[0].day,
       // meetingAddress: this.myProp.groups[0].meetings[0].address,
@@ -58,18 +59,18 @@ class App extends React.Component {
     let logo = (this.state.logo);
     let paragraphs = [];
     let bio = (this.state.bio);
-    let meetingTitle = (this.state.title);
+    let meetingTitle = (this.state.meetingTitle);
     console.log("I want this to be my state.title", this.state.meetingTitle)
     for (let i = 0; i < bio.length; i ++) {
-      paragraphs.push(<p key= {i}>{bio[i]}</p>);
+      paragraphs.push(<p className="bio-paragraph" key= {i}>{bio[i]}</p>);
     }
 
 
     return (
-        <div className="">
-          <div><img src={logo}/></div>
-          <div>{paragraphs}</div>
-          <h1>{meetingTitle}</h1>
+        <div className="bio-paragraph">
+          <h2>{meetingTitle}</h2>
+          <div><img className="photo"src={logo}/></div>
+          <div className="bio-paragraph">{paragraphs}</div>
           <button onClick={this.updateState}>Explore Groups</button>
         </div>
 
