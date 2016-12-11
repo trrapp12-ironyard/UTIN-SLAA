@@ -15,9 +15,19 @@
   text-align: center;
 }
 
+.pvertmargins{
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+}
+
+.margins {
+  padding-left: 23vw;
+  padding-right: 23vw;
+}
+
 #photo-60778 {
 
-  background-image: image("./img/pexels-photo-60778.jpeg");
+  background-image: image("../img/winter-road-arrow-74780.jpeg");
 
 }
 
@@ -26,12 +36,13 @@
 }
 
 .photo {
+  margin-top: 2em;
+  margin-bottom: 2em;
   max-width: 200px;
   height: auto;
 }
 
 .bio-paragraph {
-  margin-top: 2em;
   margin-bottom: 2em;
   text-align: left;
   float: right;
@@ -48,4 +59,10 @@
     vertical-align: middle;
     display: inline-block;
     float: left;
+}
+
+.btncenter {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }

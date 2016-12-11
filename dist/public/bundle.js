@@ -21563,7 +21563,16 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'bio-paragraph' },
+	        { className: 'bio-paragraph margins pvertmargins' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'textcenter' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Twelve Step Groups in the SLC area'
+	          )
+	        ),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -21572,17 +21581,25 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement('img', { className: 'photo', src: logo })
+	          _react2.default.createElement('img', { className: 'photo pspacing', src: logo })
+	        ),
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bio-paragraph pspacing' },
+	            paragraphs
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bio-paragraph' },
-	          paragraphs
-	        ),
-	        _react2.default.createElement(
-	          'button',
-	          { onClick: this.updateState },
-	          'Explore Groups'
+	          { className: 'textcenter' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.updateState },
+	            'Explore Groups'
+	          )
 	        )
 	      );
 	    }
