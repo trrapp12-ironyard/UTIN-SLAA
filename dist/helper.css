@@ -70,3 +70,7 @@
 #white-color {
   color: white;
 }
+
+#classic-gray {
+  background-color: rgba(255,255,255,.25)
+}
