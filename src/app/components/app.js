@@ -72,7 +72,7 @@ class App extends React.Component {
             <h1>Twelve Step Groups in the SLC area</h1>
           </div>
           <h2>{meetingTitle}</h2>
-          <div><img className="photo pspacing"src={logo}/></div>
+          <div><img className ="photo pspacing"src={logo}/></div>
           <h5><div className="bio-paragraph pspacing">{paragraphs}</div></h5>
           <div className="textcenter">
             <button onClick={this.updateState}>Explore Groups</button>
