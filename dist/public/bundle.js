@@ -21487,6 +21487,10 @@
 
 	var _reactRouter = __webpack_require__(179);
 
+	var _Meeting = __webpack_require__(217);
+
+	var _Meeting2 = _interopRequireDefault(_Meeting);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21495,7 +21499,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var jsonObject = __webpack_require__(217);
+	var jsonObject = __webpack_require__(218);
 
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
@@ -21535,7 +21539,7 @@
 	      console.log(newMeetingTitle);
 	      var newMeetingTime = this.myProp.groups[newGroupNumber].meetings[0].time;
 	      console.log("This should be the new meeting time", +this.state.newMeetingTime);
-	      var newIndividualMeetingInfo = this.myProp.groups[newGroupNumber].meetings.meetings;
+	      var newMeetings = this.myProp.groups[newGroupNumber].meetings;
 
 	      // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
 	      // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
@@ -21550,7 +21554,8 @@
 	        logo: newLogo,
 	        meetingTitle: newMeetingTitle,
 	        meetingTime: newMeetingTime,
-	        individualMeetingInfo: newIndividualMeetingInfo
+	        individualMeetingInfo: newIndividualMeetingInfo,
+	        meetings: newMeetings
 	      });
 	    }
 	  }, {
@@ -21627,8 +21632,8 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'bio-paragraph pspacing' },
-	          this.state.meetings.map(function (meeting, i) {
-	            console.log(meeting); // return <Meeting meeting={meeting} key={i}></Meeting>
+	          this.state.meetings.map(function (meeting, j) {
+	            return _react2.default.createElement(_Meeting2.default, { meeting: meeting, key: j });
 	          })
 	        ),
 	        _react2.default.createElement(
@@ -25541,6 +25546,56 @@
 
 /***/ },
 /* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Meeting = function (_React$Component) {
+	  _inherits(Meeting, _React$Component);
+
+	  function Meeting() {
+	    _classCallCheck(this, Meeting);
+
+	    return _possibleConstructorReturn(this, (Meeting.__proto__ || Object.getPrototypeOf(Meeting)).apply(this, arguments));
+	  }
+
+	  _createClass(Meeting, [{
+	    key: 'render',
+	    value: function render() {
+
+	      return _react2.default.createElement(
+	        'div',
+	        { key: this.props.meeting.i },
+	        this.props.meeting.title
+	      );
+	    }
+	  }]);
+
+	  return Meeting;
+	}(_react2.default.Component);
+
+	exports.default = Meeting;
+
+/***/ },
+/* 218 */
 /***/ function(module, exports) {
 
 	"use strict";

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
+import Meeting from './Meeting.js';
 let jsonObject = require('../../groups.json')
 
 class App extends React.Component {
@@ -41,7 +42,7 @@ class App extends React.Component {
       console.log(newMeetingTitle);
       let newMeetingTime = this.myProp.groups[newGroupNumber].meetings[0].time;
       console.log("This should be the new meeting time", + this.state.newMeetingTime);
-      let newIndividualMeetingInfo = this.myProp.groups[newGroupNumber].meetings.meetings;
+      let newMeetings = this.myProp.groups[newGroupNumber].meetings;
 
       // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
       // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
@@ -56,7 +57,8 @@ class App extends React.Component {
         logo: newLogo,
         meetingTitle: newMeetingTitle,
         meetingTime: newMeetingTime,
-        individualMeetingInfo: newIndividualMeetingInfo
+        individualMeetingInfo: newIndividualMeetingInfo,
+        meetings: newMeetings
       });
 
     }
@@ -98,8 +100,8 @@ class App extends React.Component {
           <h5><div className="bio-paragraph pspacing">{meetingTime}</div></h5>
           <div className="bio-paragraph pspacing">
             {
-              this.state.meetings.map(function(meeting, i){
-                return <Meeting meeting={meeting} key={i}></Meeting>
+              this.state.meetings.map(function(meeting, j){
+                return <Meeting meeting={meeting} key={j}></Meeting>
               })
             }
           </div>
