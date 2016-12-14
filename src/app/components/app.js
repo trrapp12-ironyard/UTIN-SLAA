@@ -8,14 +8,15 @@ class App extends React.Component {
     super();
 
     this.myProp = jsonObject;
+
     this.state = {
       currentGroup: 0,
       bio: this.myProp.groups[0].bio,
       logo: this.myProp.groups[0].logo,
       meetingTitle: this.myProp.groups[0].meetings[0].title,
+      meetingTime: this.myProp.groups[0].meetings[0].time,
+      meetings: this.myProp.groups[0].meetings,
 
-
-      // meetingTime: this.myProp.groups[0].meetings[0].time,
       // meetingDay: this.myProp.groups[0].meetings[0].day,
       // meetingAddress: this.myProp.groups[0].meetings[0].address,
       // meetingLocation: this.myProp.groups[0].meetings[0].location,
@@ -24,7 +25,8 @@ class App extends React.Component {
       // meetingMap: this.myProp.groups[0].meetings[0].mapLink
 
     };
-
+    console.log("this should be my this.myProp.groups[0].meetings.meetings" + this.myProp.groups[0].meetings)
+    console.log("this should be the original.state meeting time" + this.state.meetingTime)
     this.updateState = this.updateState.bind(this)
 
     }
@@ -37,7 +39,10 @@ class App extends React.Component {
       let newMeetingTitle = this.myProp.groups[newGroupNumber].meetings[0].title;
       console.log(this.myProp.groups[0].meetings[0].title)
       console.log(newMeetingTitle);
-      // let newMeetingTime: this.myProp.groups[newGroupNumber].meetings[0].time;
+      let newMeetingTime = this.myProp.groups[newGroupNumber].meetings[0].time;
+      console.log("This should be the new meeting time", + this.state.newMeetingTime);
+      let newIndividualMeetingInfo = this.myProp.groups[newGroupNumber].meetings.meetings;
+
       // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
       // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
       // let newMeetingLocation: this.myProp.groups[newGroupNumber].meetings[0].location;
@@ -49,21 +54,37 @@ class App extends React.Component {
         currentGroup: newGroupNumber,
         bio: newBio,
         logo: newLogo,
-        meetingTitle: newMeetingTitle
+        meetingTitle: newMeetingTitle,
+        meetingTime: newMeetingTime,
+        individualMeetingInfo: newIndividualMeetingInfo
       });
 
     }
 
   render() {
 
-    let logo = (this.state.logo);
     let paragraphs = [];
+    let meetingGroupArr = [];
+    let logo = (this.state.logo);
     let bio = (this.state.bio);
     let meetingTitle = (this.state.meetingTitle);
+    let meetingTime = (this.state.meetingTime);
+    let individualMeetingInfo = (this.state.individualMeetingInfo)
     console.log("I want this to be my state.title", this.state.meetingTitle)
     for (let i = 0; i < bio.length; i ++) {
       paragraphs.push(<p className="bio-paragraph" key= {i}>{bio[i]}</p>);
     }
+    // for (let j = 0; j < this.myProp.groups[newGroupNumber].meetings.length; j++) {
+    //   meetingGroupArr.push(<p key= {j}>{title[j]}</p>)
+
+      // "time": "6:30 - 7:30 P.M.",
+      // "day": "Monday",
+      // "address": "248 E 3900 S",
+      // "location": "N/A",
+      // "pointOfContact": "Mike D",
+      // "phoneNumber": "(801)-240-6243",
+      // "mapLink": "url"}
+
 
 
     return (
@@ -72,8 +93,16 @@ class App extends React.Component {
             <h1>Twelve Step Groups in the SLC area</h1>
           </div>
           <h2>{meetingTitle}</h2>
-          <div><img className ="photo pspacing"src={logo}/></div>
+          <div><img className="photo pspacing"src={logo}/></div>
           <h5><div className="bio-paragraph pspacing">{paragraphs}</div></h5>
+          <h5><div className="bio-paragraph pspacing">{meetingTime}</div></h5>
+          <div className="bio-paragraph pspacing">
+            {
+              this.state.meetings.map(function(meeting, i){
+                return <Meeting meeting={meeting} key={i}></Meeting>
+              })
+            }
+          </div>
           <div className="textcenter">
             <button onClick={this.updateState}>Explore Groups</button>
           </div>

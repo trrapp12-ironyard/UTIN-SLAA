@@ -21506,14 +21506,18 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
 	    _this.myProp = jsonObject;
+
 	    _this.state = {
 	      currentGroup: 0,
 	      bio: _this.myProp.groups[0].bio,
 	      logo: _this.myProp.groups[0].logo,
-	      meetingTitle: _this.myProp.groups[0].meetings[0].title
+	      meetingTitle: _this.myProp.groups[0].meetings[0].title,
+	      meetingTime: _this.myProp.groups[0].meetings[0].time,
+	      meetings: _this.myProp.groups[0].meetings
 
 	    };
-
+	    console.log("this should be my this.myProp.groups[0].meetings.meetings" + _this.myProp.groups[0].meetings);
+	    console.log("this should be the original.state meeting time" + _this.state.meetingTime);
 	    _this.updateState = _this.updateState.bind(_this);
 
 	    return _this;
@@ -21529,7 +21533,10 @@
 	      var newMeetingTitle = this.myProp.groups[newGroupNumber].meetings[0].title;
 	      console.log(this.myProp.groups[0].meetings[0].title);
 	      console.log(newMeetingTitle);
-	      // let newMeetingTime: this.myProp.groups[newGroupNumber].meetings[0].time;
+	      var newMeetingTime = this.myProp.groups[newGroupNumber].meetings[0].time;
+	      console.log("This should be the new meeting time", +this.state.newMeetingTime);
+	      var newIndividualMeetingInfo = this.myProp.groups[newGroupNumber].meetings.meetings;
+
 	      // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
 	      // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
 	      // let newMeetingLocation: this.myProp.groups[newGroupNumber].meetings[0].location;
@@ -21541,17 +21548,22 @@
 	        currentGroup: newGroupNumber,
 	        bio: newBio,
 	        logo: newLogo,
-	        meetingTitle: newMeetingTitle
+	        meetingTitle: newMeetingTitle,
+	        meetingTime: newMeetingTime,
+	        individualMeetingInfo: newIndividualMeetingInfo
 	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
 
-	      var logo = this.state.logo;
 	      var paragraphs = [];
+	      var meetingGroupArr = [];
+	      var logo = this.state.logo;
 	      var bio = this.state.bio;
 	      var meetingTitle = this.state.meetingTitle;
+	      var meetingTime = this.state.meetingTime;
+	      var individualMeetingInfo = this.state.individualMeetingInfo;
 	      console.log("I want this to be my state.title", this.state.meetingTitle);
 	      for (var i = 0; i < bio.length; i++) {
 	        paragraphs.push(_react2.default.createElement(
@@ -21560,6 +21572,17 @@
 	          bio[i]
 	        ));
 	      }
+	      // for (let j = 0; j < this.myProp.groups[newGroupNumber].meetings.length; j++) {
+	      //   meetingGroupArr.push(<p key= {j}>{title[j]}</p>)
+
+	      // "time": "6:30 - 7:30 P.M.",
+	      // "day": "Monday",
+	      // "address": "248 E 3900 S",
+	      // "location": "N/A",
+	      // "pointOfContact": "Mike D",
+	      // "phoneNumber": "(801)-240-6243",
+	      // "mapLink": "url"}
+
 
 	      return _react2.default.createElement(
 	        'div',
@@ -21591,6 +21614,22 @@
 	            { className: 'bio-paragraph pspacing' },
 	            paragraphs
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bio-paragraph pspacing' },
+	            meetingTime
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'bio-paragraph pspacing' },
+	          this.state.meetings.map(function (meeting, i) {
+	            console.log(meeting); // return <Meeting meeting={meeting} key={i}></Meeting>
+	          })
 	        ),
 	        _react2.default.createElement(
 	          'div',
