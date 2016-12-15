@@ -1,4 +1,4 @@
-# UTIN/SLAA
+# Utah 12 Step Information Network (UTIN)
 ---
 #####Before
 ![Before1](https://cloud.githubusercontent.com/assets/11747875/21236096/df2e2c6e-c2b6-11e6-9450-693c22154b27.jpg)
