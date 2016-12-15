@@ -21491,6 +21491,10 @@
 
 	var _Meeting2 = _interopRequireDefault(_Meeting);
 
+	var _Groups = __webpack_require__(218);
+
+	var _Groups2 = _interopRequireDefault(_Groups);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21499,7 +21503,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var jsonObject = __webpack_require__(218);
+	var jsonObject = __webpack_require__(219);
 
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
@@ -21520,8 +21524,7 @@
 	      meetings: _this.myProp.groups[0].meetings
 
 	    };
-	    console.log("this should be my this.myProp.groups[0].meetings.meetings" + _this.myProp.groups[0].meetings);
-	    console.log("this should be the original.state meeting time" + _this.state.meetingTime);
+
 	    _this.updateState = _this.updateState.bind(_this);
 
 	    return _this;
@@ -21535,18 +21538,8 @@
 	      var newBio = this.myProp.groups[newGroupNumber].bio;
 	      var newLogo = this.myProp.groups[newGroupNumber].logo;
 	      var newMeetingTitle = this.myProp.groups[newGroupNumber].meetings[0].title;
-	      console.log(this.myProp.groups[0].meetings[0].title);
-	      console.log(newMeetingTitle);
 	      var newMeetingTime = this.myProp.groups[newGroupNumber].meetings[0].time;
-	      console.log("This should be the new meeting time", +this.state.newMeetingTime);
 	      var newMeetings = this.myProp.groups[newGroupNumber].meetings;
-
-	      // let newMeetingDay: this.myProp.groups[newGroupNumber].meetings[0].day;
-	      // let newMeetingAddress: this.myProp.groups[newGroupNumber].meetings[0].address;
-	      // let newMeetingLocation: this.myProp.groups[newGroupNumber].meetings[0].location;
-	      // let newMeetingPointOfContact: this.myProp.groups[newGroupNumber].meetings[0].pointOfContact;
-	      // let newMeetingPhoneNumber: this.myProp.groups[newGroupNumber].meetings[0].phoneNumber;
-	      // let newMeetingMap: this.myProp.groups[newGroupNumber].meetings[0].mapLink;
 
 	      this.setState({
 	        currentGroup: newGroupNumber,
@@ -21554,7 +21547,6 @@
 	        logo: newLogo,
 	        meetingTitle: newMeetingTitle,
 	        meetingTime: newMeetingTime,
-	        individualMeetingInfo: newIndividualMeetingInfo,
 	        meetings: newMeetings
 	      });
 	    }
@@ -21563,12 +21555,10 @@
 	    value: function render() {
 
 	      var paragraphs = [];
-	      var meetingGroupArr = [];
 	      var logo = this.state.logo;
 	      var bio = this.state.bio;
 	      var meetingTitle = this.state.meetingTitle;
 	      var meetingTime = this.state.meetingTime;
-	      var individualMeetingInfo = this.state.individualMeetingInfo;
 	      console.log("I want this to be my state.title", this.state.meetingTitle);
 	      for (var i = 0; i < bio.length; i++) {
 	        paragraphs.push(_react2.default.createElement(
@@ -21577,17 +21567,6 @@
 	          bio[i]
 	        ));
 	      }
-	      // for (let j = 0; j < this.myProp.groups[newGroupNumber].meetings.length; j++) {
-	      //   meetingGroupArr.push(<p key= {j}>{title[j]}</p>)
-
-	      // "time": "6:30 - 7:30 P.M.",
-	      // "day": "Monday",
-	      // "address": "248 E 3900 S",
-	      // "location": "N/A",
-	      // "pointOfContact": "Mike D",
-	      // "phoneNumber": "(801)-240-6243",
-	      // "mapLink": "url"}
-
 
 	      return _react2.default.createElement(
 	        'div',
@@ -25637,6 +25616,52 @@
 
 /***/ },
 /* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Groups = function (_React$Component) {
+	  _inherits(Groups, _React$Component);
+
+	  function Groups() {
+	    _classCallCheck(this, Groups);
+
+	    return _possibleConstructorReturn(this, (Groups.__proto__ || Object.getPrototypeOf(Groups)).apply(this, arguments));
+	  }
+
+	  _createClass(Groups, [{
+	    key: 'render',
+	    value: function render() {
+
+	      return _react2.default.createElement('div', { key: this.props.meeting.i });
+	    }
+	  }]);
+
+	  return Groups;
+	}(_react2.default.Component);
+
+	exports.default = Groups;
+
+/***/ },
+/* 219 */
 /***/ function(module, exports) {
 
 	"use strict";

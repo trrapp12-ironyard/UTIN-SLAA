@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "Adult Children of Alcoholics",
-      "bio": "Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today.",
-      "logo": "./app/img/dummyphoto.png",
+      "bio": ["Adult Children of Alcoholics (ACA) is a 12-Step, 12-Tradition program of women and men who grew up in alcoholic or other dysfunctional homes. We meet with each other in a mutually respectful, safe environment and acknowledge our common experiences. We discover how childhood affected us in the past and influences us in the present. We take positive action - by practicing the 12 Steps, focusing on the solution and accepting a loving Higher Power of our understanding, we find freedom from the past and a way to improve our lives today."],
+      "logo": "./app/img/aca.jpeg",
       "meetings": [
         {
           "title": "The Light Catchers",
@@ -29,8 +29,12 @@
     },
     {
       "name": "Co-Dependents Anonymous",
-      "bio": "Co-Dependents Anonymous is a fellowship of men and women whose common purpose is to develop healthy relationships. The only requirement for membership is a desire for healthy and loving relationships. We gather together to support and share with each other in a journey of self-discovery -- learning to love the self. Living the program allows each of us to become increasingly honest with ourselves about our personal histories and our own codependent behaviors.",
-      "logo": "./app/img/dummyphoto.png",
+      "bio": ["Co-Dependents Anonymous is a fellowship of men and women whose common purpose is to develop healthy relationships. The only requirement for membership is a desire for healthy and loving relationships. We gather together to support and share with each other in a journey of self-discovery -- learning to love the self. Living the program allows each of us to become increasingly honest with ourselves about our personal histories and our own codependent behaviors.",
+
+      "We rely upon the Twelve Steps and Twelve Traditions for knowledge and wisdom. These are the principles of our program and guides to developing honest and fulfilling relationships with ourselves and others. In CoDA, we each learn to build a bridge to a Higher Power of our own understanding, and we allow others the same privilege.",
+
+      "This renewal process is a gift of healing for us. By actively working the program of Co-Dependents Anonymous, we can each realize a new joy, acceptance and serenity in our lives."],
+      "logo": "./app/img/codependants.png",
       "meetings": [
         {
           "title": "Men's CoDA Meeting",
@@ -60,6 +64,294 @@
           "location": "Genesis Books",
           "pointOfContact": "Mike D / Toby P",
           "phoneNumber": "(831)-240-6243 / (801)-915-5938",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Debtors Anonymous",
+      "bio": ["Debtors Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from compulsive debting.",
+
+      "The only requirement for membership is a desire to stop incurring unsecured debt. There are no dues or fees for D.A. membership; we are self-supporting through our own contributions.",
+
+      "D.A. is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes.",
+
+      "Our primary purpose is to stop debting one day at a time and to help other compulsive debtors to stop incurring unsecured debt."],
+      "logo": "./app/img/debtors_anonymous.jpeg",
+      "meetings": [
+        {
+          "title": "BDA Group",
+          "time": "12 P.M",
+          "day": "Thursday",
+          "address": "25 North 200 West",
+          "location": "Presbytarian Church, west door entrance, conference room",
+          "pointOfContact": "Tracy T",
+          "phoneNumber": "(801)-230-4724",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Eating Disorders Anonymous",
+      "bio": ["Eating Disorders Anonymous (EDA) is a fellowship of individuals who share their experience, strength and hope with each other that they may solve their common problems and help others to recover from their eating disorders. People can and do fully recover from having an eating disorder. In EDA, we help one another identify and claim milestones of recovery.",
+
+      "The only requirement for membership is a desire to recover from an eating disorder. There are no dues or fees for EDA membership. We are self-supporting through our own contributions. EDA is not allied with any sect, denomination, politics, organization or institution. EDA does not wish to engage in any controversy. We neither endorse nor oppose any causes."],
+      "logo": "./app/img/eating_disorders_anonymous.png",
+      "meetings": [
+        {
+          "title": "Tuesday 6:30 pm",
+          "time": "6:30 P.M.",
+          "day": "Tuesday",
+          "address": "1710 South Foothill Drive ",
+          "location": "All Saints Episcopal Church. Enter west parking lot from driveway on 17th South. Enter building through west basement entrance. ",
+          "pointOfContact": "Bonnie S. ",
+          "phoneNumber": "(801) 231-3442",
+          "mapLink": "url"
+        },
+        {
+          "title": "Tuesday 7:30 pm",
+          "time": "7:30 P.M.",
+          "day": "Tuesday",
+          "address": "1134 North 500 West, Provo, Utah",
+          "location": "Utah Valley Regional Medical Center, Northwest Plaza, Classroom #5 . Parking is on the north side of the building (near Bulldog Ave).",
+          "pointOfContact": "Not Listed",
+          "phoneNumber": "EDA.UtahValley@gmail.com",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Emotions Anonymous",
+      "bio": ["Emotions Anonymous is a twelve-step organization, similar to Alcoholics Anonymous. Our fellowship is composed of people who come together in weekly meetings for the purpose of working toward recovery from emotional difficulties. EA members are from many walks of life and are of diverse ages, economic status, social and educational backgrounds. The only requirement for membership is a desire to become well emotionally."],
+      "logo": "./app/img/emotions_anonymous.jpg",
+      "meetings": [
+        {
+          "title": "Salt Lake City",
+          "time": "7:30 A.M.",
+          "day": "daily",
+          "address": "5056 South 300 West",
+          "location": "Murano Alano Club",
+          "pointOfContact": "Elene",
+          "phoneNumber": "(801) 573-5509",
+          "mapLink": "url"
+        },
+        {
+          "title": "Farmington",
+          "time": "7 P.M.",
+          "day": "Wednesday",
+          "address": "133 South Main Street",
+          "location": "Farmington City Library",
+          "pointOfContact": "Not listed",
+          "phoneNumber": "Not listed",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Families Anonymous",
+      "bio": ["Families Anonymous is a group of concerned relatives and friends whose lives have been adversely affected by a loved one's addiction to alcohol or drugs.  Every one of us has made the same statement at one time or another... \"But I'm not the one who needs help!\"  It was obvious that someone else was the one with problems.  Many of us were annoyed or shocked that the other person seemed to refuse help, maybe even resented our efforts to help.",
+
+      "Families Anonymous is dedicated to doing something constructive about our approach to someone else's problem.  We learn from our own experience, but we can also get a great deal of benefit from the shared misery and foolish mistakes we make while trying to do the best we possibly can do.  That realization, in itself, goes a long way in helping us to start feeling good about ourselves... and, amazingly, sets the stage for the recovery for both of us in many, many cases.  Join Us..."],
+      "logo": "./app/img/families_anon.gif",
+      "meetings": [
+        {
+          "title": "Wednesdays 7:00 PM",
+          "time": "7 P.M.",
+          "day": "Wednesday",
+          "address": "2375 East 3300 South, Salt Lake City, Utah 84109",
+          "location": "Enter East door, go upstairs, first hall on the right, last door on the right, room 209",
+          "pointOfContact": "Brian",
+          "phoneNumber": "unlisted",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Recovering Couples Anonymous",
+      "bio": ["Recovering Couples Anonymous (RCA) is a 12-Step Fellowship founded in the Autumn of 1988. There are groups throughout the United States, as well as worldwide. Although there is no organizational affiliation with Alcoholics Anonymous © , The 12 Steps, 12 Traditions and Principles are adapted from A.A.",
+
+      "The primary purpose of RCA is to help couples find freedom from dysfunctional patterns in relationships. By using the tools of the program, we take individual responsibility for the well-being of the relationship, build new joy, and find intimacy with each other.",
+
+      "We are couples committed to restoring healthy communication, caring and greater intimacy to our relationships. We suffer from many addictions and co-addictions; some identified and some not, some treated and some not. We also come from different levels of brokenness. Many of us have been separated or near divorce. Some of us are new in our relationships and seek to build intimacy as we grow together as couples."],
+      "logo": "./app/img/recovering_couples_anonymous.jpeg",
+      "meetings": [
+        {
+          "title": "Last Saturday of the Month",
+          "time": "7 A.M.",
+          "day": "Saturday",
+          "address": "30 South Main St, Farmington, UT",
+          "location": "N/A",
+          "pointOfContact": "Bill",
+          "phoneNumber": "(801) 712-1346",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "S-Anon",
+      "bio": ["Sexaholics Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover. The only requirement for membership is a desire to stop lusting and become sexually sober. There are no dues or fees for SA membership; we are self-supporting through our own contributions. SA is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes. SA's primary purpose is to help its members stay sexually sober and help other sexaholics.",
+
+      "S-Anon is a fellowship of the spouses, relatives and friends of sexually addicted people who share their experience, strength and hope in order to solve their common problems. Our primary purpose is to recover from the effects upon us of another person's sexaholism and to help the families and friends of sexaholics. We do this by applying the Twelve Steps of S-Anon to our lives and by welcoming and giving comfort to families of sexaholics. There are no dues or fees for S-Anon membership; we are self-supporting through our own contributions.",
+
+      "Please Note: All meetings of Sexaholics Anonymous (SA) or S-Anon are closed, and are only for those desiring their own personal sexual sobriety and/or co-dependent recovery. All meetings welcome newcomers and emphasize confidentiality and anonymity."],
+      "logo": "./app/img/S_anon.jpg",
+      "meetings": [
+        {
+          "title": "S-Anon",
+          "time": "6 - 7 P.M.",
+          "day": "Wednesday",
+          "address": "1134 N 500 W Provo, UT",
+          "location": "NorthWest plaza building, Rm 1",
+          "pointOfContact": "Suzie",
+          "phoneNumber": "(801)-885-5741",
+          "mapLink": "url"
+        },
+        {
+          "title": "S-Anon (newcomer)",
+          "time": "6:30 - 8 P.M.",
+          "day": "Wednesday",
+          "address": "55 W Main st. Lehi, UT",
+          "location": "Timpanogas Baptist Church",
+          "pointOfContact": "Laurel A",
+          "phoneNumber": "(801)-865-8593",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "SAA",
+      "bio": ["As a fellowship of recovering addicts, Sex Addicts Anonymous offers a message of hope to anyone who suffers from sex addiction.",
+
+      "Through long and painful experience, we came to realize that we were powerless over our sexual thoughts and behaviors and that our preoccupation with sex was causing progressively severe adverse consequences for us, our families, and our friends. Despite many failed promises to ourselves and attempts to change, we discovered that we were unable to stop acting out sexually by ourselves.",
+
+      "Many of us came to this realization when we started attending SAA meetings. In that setting we heard stories similar to ours and realized that recovery from our problem was possible. We learned through the SAA Fellowship that we were not hopelessly defective.",
+
+      "The basic principles of recovery practiced by SAA are found in the Twelve Steps and Twelve Traditions of Alcoholics Anonymous. Although we are not affiliated with AA or with any other organization or agency, we are, indeed, grateful for permission to modify and apply the Steps and Traditions to sex addiction, making recovery possible for us."],
+      "logo": "./app/img/saa.jpg",
+      "meetings": [
+        {
+          "title": "Saturday SAA Men's",
+          "time": "11:30 A.M.",
+          "day": "Saturday",
+          "address": "Friendship Manor, 1320 E 500 S",
+          "location": "conference room",
+          "pointOfContact": "Jerry or Daniel",
+          "phoneNumber": "(801)-856-6669 or (801)-651-5305",
+          "mapLink": "url"
+        },
+        {
+          "title": "Tuesday SAA Davis County",
+          "time": "7:30 P.M.",
+          "day": "Saturday",
+          "address": "796 S Mountain Rd",
+          "location": "Westminster Presbyterian Church - classroom",
+          "pointOfContact": "Doug J or Robert D",
+          "phoneNumber": "(801)-776-6920 or (801)-668-7222",
+          "mapLink": "url"
+        },
+        {
+          "title": "Steps to Recovery",
+          "time": "6 P.M.",
+          "day": "Wednesday",
+          "address": "12 C Street",
+          "location": "First Presbyterian Church, Classroom #2",
+          "pointOfContact": "Alex or David",
+          "phoneNumber": "(801)-449-1851",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "SLAA",
+      "bio": ["Sex and Love Addicts Anonymous is a Twelve Step - Twelve Tradition oriented fellowship based on the model pioneered by Alcoholics Anonymous.",
+
+      "One of the resources we draw on is our willingness to stop acting out in our own personal bottom line addictive behavior on a daily basis. In addition, members reach out to others in the fellowship, practice the Twelve Steps and Twelve Traditions of S.L.A.A. and seek a relationship with a higher power to counter the destructive consequences of one or more addictive behaviors related to sex addiction, love addiction, dependency on romantic attachments, emotional dependency, and sexual, social and emotional anorexia.",
+
+      "We find a common denominator in our obsessive, compulsive patterns which renders any personal differences of sexual or gender orientation irrelevant. "],
+      "logo": "./app/img/slaa.png",
+      "meetings": [
+        {
+          "title": "Saturday Morning SLAA",
+          "time": "10 A.M.",
+          "day": "Saturday",
+          "address": "248 E 3900 S",
+          "location": "Genesis Books",
+          "pointOfContact": "Jame",
+          "phoneNumber": "(801)-747-9015",
+          "mapLink": "url"
+        },
+        {
+          "title": "Sunday Solution Seekers",
+          "time": "7 P.M.",
+          "day": "Sunday",
+          "address": "8074 S 1300 E",
+          "location": "N/A",
+          "pointOfContact": "James",
+          "phoneNumber": "(801)-747-9015",
+          "mapLink": "url"
+        },
+        {
+          "title": "Keys of the Kingdom",
+          "time": "7 P.M.",
+          "day": "Monday",
+          "address": "8th Ave and C street",
+          "location": "LDS Hospital, Education Building, Amicus Board Room",
+          "pointOfContact": "Bill",
+          "phoneNumber": "(801)-520-0345",
+          "mapLink": "url"
+        },
+        {
+          "title": "Women's SLAA Book Study",
+          "time": "7 P.M.",
+          "day": "Tuesday",
+          "address": "8074 S 1300 E",
+          "location": "Healthsouth Rehab Hospital",
+          "pointOfContact": "Claire or Brookie",
+          "phoneNumber": "(801)-251-6140 or (801) 821-8507",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Underearners Anonymous",
+      "bio": ["Underearners Anonymous is a fellowship of men and women who share their experience, strength and hope with each other, that they may solve their common problem and help others to recover from compulsive underearning.",
+
+      "The only requirement for membership is the desire to stop underearning. There are no dues or fees; we are self-supporting through our own contributions.",
+
+      "UA is not allied with any sect, denomination, politics, organization, or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes.",
+
+      "Our primary purpose is to stop compulsive underearning, one day at a time, and to help other underearners do the same."
+
+],
+      "logo": "./app/img/underearners_anon.gif",
+      "meetings": [
+        {
+          "title": "It's Good to Be Me",
+          "time": "6:30 P.M.",
+          "day": "Thursday",
+          "address": "12 C Street",
+          "location": "First Presbyterian Church",
+          "pointOfContact": "Camille M",
+          "phoneNumber": "(801)-888-5828",
+          "mapLink": "url"
+        }
+      ]
+    },
+    {
+      "name": "Workaholics Anonymous",
+      "bio": ["Workaholics Anonymous is a fellowship of individuals who share their experience, strength, and hope with each other that they may solve their common problems and help others to recover from workaholism.",
+
+      "The only requirement for membership is the desire to stop working compulsively. There are no dues or fees for WA membership; we are self-supporting through our own contributions. WA is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses not opposes any causes. Our primary purpose is to stop working compulsively and to carry the message of recovery to workaholics who still suffer."],
+      "logo": "./app/img/workaholics_anonymous.jpg",
+      "meetings": [
+        {
+          "title": "Red Rock",
+          "time": "7:15 P.M.",
+          "day": "Tuesday",
+          "address": "12 C Street",
+          "location": "First Presbyterian Church",
+          "pointOfContact": "Jill F",
+          "phoneNumber": "(801)-803-0996",
           "mapLink": "url"
         }
       ]
