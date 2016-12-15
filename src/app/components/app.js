@@ -65,10 +65,12 @@ class App extends React.Component {
           </div>
           <br/>
           <h2>{meetingTitle}</h2>
-          <div><img className="photo pspacing"src={logo}/></div>
-          <h5><div className="bio-paragraph pspacing">{paragraphs}</div></h5>
+          <div>
+            <img align="top" className="photo pspacing"src={logo}/>
+            <p className="bio-paragraph pspacing">{paragraphs}</p>
+          </div>
           <div className="fillwidth">
-            <div className="meeting-paragraph pspacing textcenter">
+            <div className="meeting-paragraph meetingspacing textcenter">
               {
                 this.state.meetings.map(function(meeting, j){
                   return <Meeting meeting={meeting} key={j}></Meeting>
@@ -88,3 +90,5 @@ class App extends React.Component {
 
 
 export default App;
+
+// <p>need `float:left` <b><i>and</i></b> text —not header, divs, etc. (i.e. use inline elems here, not block elems) <b><i>and</i></b> don't forget to `clear` your float!</p>

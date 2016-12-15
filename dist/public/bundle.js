@@ -21589,13 +21589,9 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement('img', { className: 'photo pspacing', src: logo })
-	        ),
-	        _react2.default.createElement(
-	          'h5',
-	          null,
+	          _react2.default.createElement('img', { align: 'top', className: 'photo pspacing', src: logo }),
 	          _react2.default.createElement(
-	            'div',
+	            'p',
 	            { className: 'bio-paragraph pspacing' },
 	            paragraphs
 	          )
@@ -21605,7 +21601,7 @@
 	          { className: 'fillwidth' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'meeting-paragraph pspacing textcenter' },
+	            { className: 'meeting-paragraph meetingspacing textcenter' },
 	            this.state.meetings.map(function (meeting, j) {
 	              return _react2.default.createElement(_Meeting2.default, { meeting: meeting, key: j });
 	            })
@@ -21628,6 +21624,8 @@
 	}(_react2.default.Component);
 
 	exports.default = App;
+
+	// <p>need `float:left` <b><i>and</i></b> text —not header, divs, etc. (i.e. use inline elems here, not block elems) <b><i>and</i></b> don't forget to `clear` your float!</p>
 
 /***/ },
 /* 179 */
@@ -25620,45 +25618,26 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var Groups = function Groups(props) {
+	  return _react2.default.createElement('div', null);
+	};
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Groups = function (_React$Component) {
-	  _inherits(Groups, _React$Component);
-
-	  function Groups() {
-	    _classCallCheck(this, Groups);
-
-	    return _possibleConstructorReturn(this, (Groups.__proto__ || Object.getPrototypeOf(Groups)).apply(this, arguments));
-	  }
-
-	  _createClass(Groups, [{
-	    key: 'render',
-	    value: function render() {
-
-	      return _react2.default.createElement('div', { key: this.props.meeting.i });
-	    }
-	  }]);
-
-	  return Groups;
-	}(_react2.default.Component);
-
-	exports.default = Groups;
+	// export default class Groups extends React.Component {
+	//   render () {
+	//
+	//     return (
+	//       <div key={this.props.meeting.i}>
+	//
+	//       </div>
+	//     )
+	//   }
+	// }
 
 /***/ },
 /* 219 */

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Groups = (props) => {
   return (
-    <div>{props.}</div>
+    <div>{}</div>
   )
 }
 

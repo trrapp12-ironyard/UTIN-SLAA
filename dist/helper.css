@@ -11,6 +11,10 @@
   line-height: 1.75em;
 }
 
+.meetingspacing {
+  line-height: .35em;
+}
+
 .textcenter {
   text-align: center;
 }
@@ -37,15 +41,19 @@
 
 .photo {
   margin-top: 2em;
+  margin-right: 2em;
   margin-bottom: 2em;
   max-width: 200px;
   height: auto;
+  float: left;
+  clear: right;
+  display: inline;
 }
 
 .bio-paragraph {
   margin-bottom: 2em;
-  float: right;
-  display: inline-block;
+  padding-top: .75em;
+  text-align: left;
 }
 
 .meeting-paragraph {
