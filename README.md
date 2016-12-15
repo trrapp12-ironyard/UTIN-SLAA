@@ -21,7 +21,7 @@
 
 ###Brief Description: 
 ---
-My client for this project was a Utah based non-profit called the Utah Twelve-Step Information Network (UTIN). They approached me because they were short of money and I was short of experience.  
+My client for this project was a Utah based non-profit called the Utah Twelve-Step Information Network (UTIN). The objective of the project was to move their pure html website into a more modern, user-friendly website.  I used CSS3 to and my knowledge of design principles to improve their design.  I turned the webs of hyperlinks into a single JSON object and then used ReactJS and Javascript to create different components which could update in a single view.  The result is a single page where the user can get all the information, augmenting user experience and decreasing confusion and loss of users by bad UX.
 <br/>
 <br/>
 
