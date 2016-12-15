@@ -21601,6 +21601,7 @@
 	            'Twelve Step Groups in the SLC area'
 	          )
 	        ),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -21621,20 +21622,15 @@
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'h5',
-	          null,
+	          'div',
+	          { className: 'fillwidth' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'bio-paragraph pspacing' },
-	            meetingTime
+	            { className: 'meeting-paragraph pspacing textcenter' },
+	            this.state.meetings.map(function (meeting, j) {
+	              return _react2.default.createElement(_Meeting2.default, { meeting: meeting, key: j });
+	            })
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'bio-paragraph pspacing' },
-	          this.state.meetings.map(function (meeting, j) {
-	            return _react2.default.createElement(_Meeting2.default, { meeting: meeting, key: j });
-	          })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -25548,7 +25544,7 @@
 /* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25578,13 +25574,58 @@
 	  }
 
 	  _createClass(Meeting, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 
 	      return _react2.default.createElement(
-	        'div',
-	        { key: this.props.meeting.i },
-	        this.props.meeting.title
+	        "div",
+	        { className: "meeting-border", key: this.props.meeting.i },
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          _react2.default.createElement(
+	            "p",
+	            { className: "underline" },
+	            this.props.meeting.title
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Time: ",
+	          this.props.meeting.time
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Day: ",
+	          this.props.meeting.day
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Address: ",
+	          this.props.meeting.address
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Location: ",
+	          this.props.meeting.location
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Point of Contact: ",
+	          this.props.meeting.pointOfContact
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          " Phone Number: ",
+	          this.props.meeting.phoneNumber
+	        ),
+	        _react2.default.createElement("br", null)
 	      );
 	    }
 	  }]);

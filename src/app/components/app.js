@@ -94,16 +94,18 @@ class App extends React.Component {
           <div className="textcenter">
             <h1>Twelve Step Groups in the SLC area</h1>
           </div>
+          <br/>
           <h2>{meetingTitle}</h2>
           <div><img className="photo pspacing"src={logo}/></div>
           <h5><div className="bio-paragraph pspacing">{paragraphs}</div></h5>
-          <h5><div className="bio-paragraph pspacing">{meetingTime}</div></h5>
-          <div className="bio-paragraph pspacing">
-            {
-              this.state.meetings.map(function(meeting, j){
-                return <Meeting meeting={meeting} key={j}></Meeting>
-              })
-            }
+          <div className="fillwidth">
+            <div className="meeting-paragraph pspacing textcenter">
+              {
+                this.state.meetings.map(function(meeting, j){
+                  return <Meeting meeting={meeting} key={j}></Meeting>
+                })
+              }
+            </div>
           </div>
           <div className="textcenter">
             <button onClick={this.updateState}>Explore Groups</button>
