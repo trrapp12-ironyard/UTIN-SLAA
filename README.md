@@ -10,7 +10,7 @@
 ![SLAA3](https://cloud.githubusercontent.com/assets/11747875/20292586/00305ce8-aaac-11e6-9cf1-ecc37990735d.png)
 <br/>
 <br/>
-![SLAA3](https://cloud.githubusercontent.com/assets/11747875/20292601/28b2bcba-aaac-11e6-8d83-3acdb2f71633.png)
+![SLAA3](https://cloud.githubusercontent.com/assets/11747875/21236096/df2e2c6e-c2b6-11e6-9450-693c22154b27.jpg)
 <br/>
 <br/>
 
