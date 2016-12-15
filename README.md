@@ -16,7 +16,7 @@
 
 ###Brief Description: 
 ---
-My client for this project was a local SLAA chapter in Utah. They approached me because they were short of money and I was short of experience.  It was a project that was challenged my design and coding skills and I was glad to help.
+My client for this project was a Utah based non-profit called the Utah Twelve-Step Information Network (UTIN). They approached me because they were short of money and I was short of experience.  
 <br/>
 <br/>
 
@@ -24,16 +24,17 @@ My client for this project was a local SLAA chapter in Utah. They approached me 
 ---
 
 - [x] Use of CSS3 and HTML5.
+- [x] Use of ReactJS to handle state and make modular components.
 - [x] Use of position and z-index to get layered navigation bar look.
 - [x] Use of Bootstrap.
-- [x] Use of CSS3 to get accordion effect.
+- [x] Use of jQuery and CSS3 to get accordion effect.
 <br/>
 <br/>
 
 ###Project published at: 
 ---
 
-[SLAA](http://trrapp12.github.io/examplepage/)
+[UTIN](https://utin.herokuapp.com/)
 <br/>
 <br/>
 ###More Information:
