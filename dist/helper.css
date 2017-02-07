@@ -11,9 +11,9 @@
   line-height: 1.75em;
 }
 
-/*.meetingspacing {
-  line-height: .35em;
-}*/
+.margin_move_up {
+  margin-top: -80px;
+}
 
 .textcenter {
   text-align: center;
