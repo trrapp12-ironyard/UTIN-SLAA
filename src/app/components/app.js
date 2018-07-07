@@ -79,7 +79,7 @@ class App extends React.Component {
             </div>
           </div>
           <div className="textcenter">
-            <button onClick={this.updateState}>Explore Groups</button>
+            <button style="btncenter btn btn-lg btn-default" onClick={this.updateState}>Explore Groups</button>
           </div>
 
         </div>
