@@ -2,6 +2,9 @@
   "name": "utin-slaa",
   "version": "1.0.0",
   "description": "a web page for local 12-step groups in the SLC, UT area.",
+  "engines": {
+    "npm": "6.x"
+  },
   "main": "index.js",
   "scripts": {
     "webpack:dev": "webpack -d",
