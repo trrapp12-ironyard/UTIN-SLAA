@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a web page for local 12-step groups in the SLC, UT area.",
   "engines": {
-    "npm": "6.x"
+    "node": "14.x"
   },
   "main": "index.js",
   "scripts": {
