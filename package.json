@@ -51,7 +51,9 @@
     "url": "https://github.com/trrapp12/UTIN-SLAA/issues"
   },
   "homepage": "https://github.com/trrapp12/UTIN-SLAA#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-dev-server": ">=3.1.11"
+  },
   "dependencies": {
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
@@ -68,7 +70,7 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": ">=3.1.11"
   }
 
 }
