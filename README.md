@@ -50,7 +50,7 @@ My client for this project was a Utah based non-profit called the Utah Twelve-St
 ### Project published at: 
 ---
 
-[UTIN](https://utin.herokuapp.com/) 
+[UTIN](https://gentle-hollows-52951.herokuapp.com/#) 
 <br/>
 <br/>
 ### More Information:
