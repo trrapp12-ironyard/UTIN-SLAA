@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
 import Meeting from './Meeting.js';
 import Groups from './Groups.js';
-let jsonObject = require('././groups.json')
+
+let jsonObject = require('~/src/app/components/groups.json')
 
 class App extends React.Component {
 
