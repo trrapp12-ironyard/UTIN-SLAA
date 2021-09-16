@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from '../components/app.js';
+import App from '~/src/app/components/app.js';
 
 const app = document.getElementById('groupParentInformation');
 render(<App/>, app);
