@@ -1,19 +1,28 @@
-import React from 'react';
+'use strict';
 
-export default class Meeting extends React.Component {
-  render () {
+class Meeting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+  
+  render() {
+    
+    let br = React.createElement("br");
+    let phoneNumber = React.createElement("p", null, " Phone Number: ", this.props.meeting.phoneNumber);
+    let pointOfContact = React.createElement("p", null, "Point of Contact: ", this.props.meeting.pointOfContact);
+    let location = React.createElement("p", null, "Location: ", this.props.meeting.location);
+    let address = React.createElement("p", null, "Address: ", this.props.meeting.address);
+    let day = React.createElement("p", null, "Day: ", this.props.meeting.day);
+    let time = React.createElement("p", null, "Time: ", this.props.meeting.time);
 
-    return (
-      <div className="meeting-border" key={this.props.meeting.i}>
-        <h4><p className="underline">{this.props.meeting.title}</p></h4>
-        <p>Time: {this.props.meeting.time}</p>
-        <p>Day: {this.props.meeting.day}</p>
-        <p>Address: {this.props.meeting.address}</p>
-        <p>Location: {this.props.meeting.location}</p>
-        <p>Point of Contact: {this.props.meeting.pointOfContact}</p>
-        <p> Phone Number: {this.props.meeting.phoneNumber}</p>
-        <br/>
-      </div>
-    )
+    return /*#__PURE__*/React.createElement("div", {
+      className: "meeting-border",
+      key: this.props.meeting.i
+    }, /*#__PURE__*/React.createElement("h4", null, /*#__PURE__*/React.createElement("p", {
+      className: "underline"
+    }, this.props.meeting.title)), time, day, address, location, pointOfContact, phoneNumber, br);
   }
 }
+
+export default Meeting;

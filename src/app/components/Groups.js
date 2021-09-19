@@ -1,10 +1,24 @@
-import React from 'react';
+'use strict';
 
-const Groups = (props) => {
-  return (
-    <div>{}</div>
-  )
+const e = React.createElement;
+
+
+class Groups extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    return e(
+      'div',
+      {},
+      '{}'
+    );
+  }
 }
+
+export default Groups;
 
 // export default class Groups extends React.Component {
 //   render () {
