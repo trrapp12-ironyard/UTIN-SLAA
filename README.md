@@ -1,7 +1,7 @@
 # Utah 12 Step Information Network (UTIN)
 
 
-##### Contributors: Trevor Rapp
+#### Contributors: Trevor Rapp
 
 ---
 
@@ -10,25 +10,6 @@
 [![Button60](https://user-images.githubusercontent.com/11747875/141831784-919b6a2d-ed0d-4299-9c36-9e79cc40ca0b.png)](https://utin-slaa.herokuapp.com/)
 
 <br>
-
----
-
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-<br>
-<br>
-
----
-
-### Brief Description: 
-
-
-My client for this project was a Utah based non-profit called the Utah Twelve-Step Information Network (UTIN). The objective of the project was to move their pure html website into a more modern, user-friendly website.  I used CSS3 to and my knowledge of design principles to improve their design.  I turned the webs of hyperlinks into a single JSON object and then used ReactJS and Javascript to create different components which could update in a single view.  The result is a single page where the user can get all the information, augmenting user experience and decreasing confusion and loss of users by bad UX.
-<br>
-<br>
-
----
 
 ### Before
 ![Before1](https://cloud.githubusercontent.com/assets/11747875/21236096/df2e2c6e-c2b6-11e6-9450-693c22154b27.jpg)
@@ -49,7 +30,27 @@ My client for this project was a Utah based non-profit called the Utah Twelve-St
 <br/>
 ![utin3](https://user-images.githubusercontent.com/11747875/32585424-a3978ec8-c4ba-11e7-9773-989ad338f170.gif)
 <br>
+
+
+---
+
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 <br>
+
+---
+
+### Brief Description: 
+
+
+My client for this project was a Utah based non-profit called the Utah Twelve-Step Information Network (UTIN). The objective of the project was to move their pure html website into a more modern, user-friendly website.  I used CSS3 to and my knowledge of design principles to improve their design.  I turned the webs of hyperlinks into a single JSON object and then used ReactJS and Javascript to create different components which could update in a single view.  The result is a single page where the user can get all the information, augmenting user experience and decreasing confusion and loss of users by bad UX.
+<br>
+<br>
+
+---
+
+
 
 ---
 
