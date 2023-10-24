@@ -50,11 +50,6 @@ My client for this project was a Utah based non-profit called the Utah Twelve-St
 
 ---
 
-
-
----
-
-
 ### Project Demonstrates: 
 
 
